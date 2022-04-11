@@ -21,8 +21,9 @@ function convertClicked() {
   const fahrenheit = parseInt(document.getElementById("fahrenheit").value)
 
   //process
-  const celsius = (fahrenheit - 32) * 5/9
-  
+  const celsius = ((fahrenheit - 32) * 5) / 9
+
   //output
-  document.getElementById("temperature-in-celsius").innerHTML = "The temperature is: " +  celsius.toFixed(2) + " °C!"
+  document.getElementById("temperature-in-celsius").innerHTML =
+    "The temperature is: " + celsius.toFixed(2) + " °C!"
 }
