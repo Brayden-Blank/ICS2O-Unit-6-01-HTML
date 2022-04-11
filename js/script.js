@@ -8,14 +8,21 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit-6-01-HTML/sw.js", {
+    scope: "/ICS2O-Unit-6-01-HTML/",
   })
 }
 
 /**
- * This function displays an alert.
+ * This function gets the users input and converts the value to celsius
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function convertClicked() {
+  //input
+  const fahrenheit = parseInt(document.getElementById("fahrenheit").value)
+
+  //process
+  const celsius = (fahrenheit - 32) * 5/9
+  
+  //output
+  document.getElementById("temperature-in-celsius").innerHTML = "The temperature is: " +  celsius.toFixed(2) + " °C!"
 }
