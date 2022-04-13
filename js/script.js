@@ -1,7 +1,7 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2022 Brayden Blank All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Brayden Blank
+// Created on: April 2022
 // This file contains the JS functions for index.html
 
 /**
