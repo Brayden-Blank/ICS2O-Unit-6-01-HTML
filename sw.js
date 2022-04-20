@@ -8,7 +8,7 @@ var URLS = [
   `${GHPATH}/android-chrome-512x512.png`,
   `${GHPATH}/js/script.js`,
 ]
- 
+
 var CACHE_NAME = APP_PREFIX + VERSION
 self.addEventListener("fetch", function (e) {
   console.log("Fetch request : " + e.request.url)
